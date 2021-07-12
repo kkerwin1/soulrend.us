@@ -1,0 +1,9 @@
+.slider {
+  display: flex;
+  overflow-y: auto;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+}
