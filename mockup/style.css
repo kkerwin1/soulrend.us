@@ -1,9 +1,140 @@
-.slider {
-  display: flex;
-  overflow-y: auto;
+body,
+html {
+	height: 100%;
 }
 
-.slide {
-  flex-shrink: 0;
-  width: 100%;
+body.slider__body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.slider__container {
+	position: relative;
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transition: -webkit-transform 500ms ease-in-out;
+	transition: -webkit-transform 500ms ease-in-out;
+	-o-transition: transform 500ms ease-in-out;
+	transition: transform 500ms ease-in-out;
+	transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+.slider__page {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.slider__indicators {
+	position: absolute;
+	left: 18px;
+	top: 50%;
+	z-index: 2;
+	margin: 0;
+	padding: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.slider__indicator {
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 10px 0;
+	border-radius: 100px;
+	background-color: #fff;
+	cursor: default;
+}
+.slider__indicator--active {
+	opacity: 0.3;
+}
+
+.slide_1 {
+   background: url(https://wordstream-files-prod.s3.amazonaws.com/s3fs-public/styles/simple_image/public/images/hero-image-guide-avengers.jpg) no-repeat center;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: black;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 50px;
+}
+
+.slide_2 {
+  background: url(https://wordstream-files-prod.s3.amazonaws.com/s3fs-public/styles/simple_image/public/images/hero-image-guide-avengers.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding: 20px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.slide_2 h4 {
+  color: white;
+  font-size: 25px;
+}
+
+.slide_2 article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide_2 div {
+  width: 500px;
+  padding: 50px;
+  border: 5px black;
+  border-radius: 10px;
+  margin: 30px;
+  background-color: rgba(0, 0, 0, 0.4)
+}
+
+.slide_2 li {
+  font-size: 14px;
+  text-align: left;
+  color: white;
+}
+
+.slide_3 {
+  background: url(https://wordstream-files-prod.s3.amazonaws.com/s3fs-public/styles/simple_image/public/images/hero-image-guide-avengers.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding: 20px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.slide_3 h4 {
+  color: white;
+  font-size: 25px;
+}
+
+.slide_3 article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide_3 div {
+  width: 500px;
+  padding: 50px;
+  border: 5px black;
+  border-radius: 10px;
+  margin: 30px;
+  background-color: rgba(0, 0, 0, 0.4)
+}
+
+.slide_3 li {
+  font-size: 14px;
+  text-align: left;
+  color: white;
 }
